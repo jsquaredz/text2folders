@@ -1,2 +1,2 @@
 # text2folders
-Will make folders from a textfile.
+Makes folders from a textfile.
