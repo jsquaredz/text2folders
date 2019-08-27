@@ -2,8 +2,6 @@
 #
 #usage:   python3 text2folders.py <textfile>
 
-
-
 import os
 import sys
 
@@ -15,4 +13,7 @@ f= open(filename, 'r')
 for i in f:
     i = i.strip()
     os.mkdir(i)
+    print ("Created folder", i)
 
+f.close()
+print ("Complete")
