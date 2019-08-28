@@ -1,0 +1,17 @@
+02220 - Hard Demolition
+03300 - Cast-In-Place-Concrete
+05120 - Structural Steel
+06220 - Finish Carpentry & Millwork
+07250 - Fireproofing
+08100 - Metal Doors, Frames & Hardware
+09260 - Framing & Drywall
+09510 - Acoustical Ceilings
+09680 - Carpet & Resilient Flooring
+09900 - Painting & Wallcovering
+10260 - Wall & Corner Guards
+15300 - Fire Protection
+15400 - Plumbing
+15500 - Heating Ventilating Air Conditioning
+16000 - Electrical
+16400 - Low Voltage Electrical
+16710 - Fire Alarm Systems
