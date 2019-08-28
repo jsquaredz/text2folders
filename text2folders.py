@@ -5,7 +5,7 @@
 import os
 import sys
 
-#get filename from 
+#get filename from argument
 filename = sys.argv[1]
 f= open(filename, 'r')
 
