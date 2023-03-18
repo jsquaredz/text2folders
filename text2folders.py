@@ -1,26 +1,25 @@
 #!/usr/bin/env python3
-#text2files.py
-#usage:   python3 text2folders.py <textfile>
 import os
 import sys
 
-def makefolders(filename):
-    f= open(filename, 'r')
-    #loop through each line in a textfile and make a new directory using that name
-    for i in f:
-        i = i.strip()
-        if not os.path.exists(i):
-            os.mkdir(i)
-            print ("Created folder", i)
-        else :
-            print("Folder", i, "already exists... moving on.")
-    f.close()
-    print ("Complete")
+def make_folders_from_text_file(file_path):
+    """
+    Reads a text file line by line and creates a folder with the name of each line if it doesn't already exist.
+    :param file_path: The path of the text file.
+    """
+    with open(file_path) as f:
+        for line in f:
+            folder_name = line.strip()
+            if not os.path.exists(folder_name):
+                os.mkdir(folder_name)
+                print(f"Created folder {folder_name}")
+            else:
+                print(f"Folder {folder_name} already exists, skipping.")
+    print("Complete")
 
-#get filename from command line argument
-try:
-    filename = sys.argv[1]
-    makefolders(filename)
-    
-except:
-    print ("You must add the filename of the text file as a command line argument (e.g. python3 text2folders.py <filename.txt>)")
+# Get the filename from command line arguments.
+if len(sys.argv) == 2:
+    file_path = sys.argv[1]
+    make_folders_from_text_file(file_path)
+else:
+    print("Please specify a text file as a command line argument, e.g. 'python3 text2folders.py filename.txt'")
